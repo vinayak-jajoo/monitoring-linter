@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "alert": { "type": "string" },
+                "expr": { "type": "string" },
+                "for": { "type": "string" },
+                "labels": { "type": "object" },
+                "annotations": { "type": "object" }
+              },
+              "required": ["alert", "expr"]
+            }
+          }
+        },
+        "required": ["name", "rules"]
+      }
+    }
+  },
+  "required": ["groups"]
+}
