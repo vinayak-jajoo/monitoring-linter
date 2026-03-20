@@ -1,7 +1,0 @@
-groups:
-  - name: cpu-alerts
-    rules:
-      - alert: high_cpu_usage
-        expr: cpu_usage > 95
-        labels:
-          team: devops

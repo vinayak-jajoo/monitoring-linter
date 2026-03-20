@@ -1,0 +1,6 @@
+{
+  "required_fields": ["host_name", "service_description", "check_command"],
+  "naming_regex": "^[A-Z][a-zA-Z\\s]+$",
+  "command_prefix": "check_",
+  "enable_duplicate_check": true
+}
